@@ -1,0 +1,32 @@
+1. To sort the output by file size, we write ls -S, to sort it, starting
+largest size first
+2. By using touch, we create new files. A file argument that does not exist
+is created empty. Unless -c or -h is supplied. 
+Touch -a only changes the access time
+touch -m Changes only the modification time
+3. To find out in which directory we are, we use the pwd command 
+In the knittl/ubuntu container, we start with /home/student
+4. To switch from a directory to another, we can use the cd command  
+cd .. leads me to the parent directory
+cd ../.. leads me to the parent's parent directory
+5. For switching to the /usr/bin directory, I can use cd /usr/bin as an 
+absolute address, since it will lead me there, no matter where I currently am
+Or I navigate my way by starting with pwd to check where I am, list the 
+contents with ls-a and move path by path until I reach the directory
+It's faster tho to use the absolute address
+6. The used command is touch. If I want to list the information in long 
+format, I use the ls -l command. 
+7. The difference between paths ./lib, ../lib and /lin is:
+./ lib Represents a subdirectory named "lib" in the current directory
+../lib Represents a subdirectory named "lib" in the parent directory of the
+current directory
+/lib Represents an absolute path to the "lib" directory, starting from
+the root
+8. The things we used frequently so far are pwd, ls, ls -a, mkdir, touch, rm, cd
+cd, as mentioned, leads to a directory
+pwd shows me where I am right now
+ls shows me what's in the directory where I am right now
+ls -a shows the hidden content of a directory
+mkdir makes a new directory
+touch makes a new file
+rm removes a file
